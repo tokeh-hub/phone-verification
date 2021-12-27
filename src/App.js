@@ -33,8 +33,10 @@ function App() {
     <div className="App">
        <div className='card'>
          <div className='head'>
+          <div className='input-icon'>
          <input placeholder='search phone' onChange={e=>setMobile(e.target.value)}/>
-         <span className=''><FiSearch/></span>
+         <span className='icon'><FiSearch/></span>
+         </div>
          <button className='btn' onClick={verify}  >Verify Phone Number</button>
          </div>
          {info && mobile?
